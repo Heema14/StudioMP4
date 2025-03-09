@@ -5,6 +5,7 @@ import TitleSecs from "../Helper/TitleSecs";
 import CustomBtn from "../Helper/CustomBtn";
 import { FaPlay } from "react-icons/fa";
 import DivVideo from "./DivVideo";
+import Image from "next/image";
 
 const OurClients = () => {
   const [showVideo, setShowVideo] = useState(false);
@@ -55,7 +56,13 @@ const OurClients = () => {
             <FaPlay className="text-white w-10 h-10" />
           </div>
 
-          <img src="/images/img5.png" alt="image" />
+          <Image
+            src="/images/img5.png"
+            alt="image"
+            width={500}
+            height={500}
+            className="w-full h-full"
+          />
         </div>
       </div>
 

@@ -4,6 +4,7 @@ import DivCard from "./DivCard";
 import { FaCopy, FaFile, FaStar } from "react-icons/fa";
 import TitleSecs from "../Helper/TitleSecs";
 import TypeWriterEffect from "./TypeWriterEffect";
+import Image from "next/image";
 
 const Hero = () => {
   return (
@@ -24,7 +25,13 @@ const Hero = () => {
           data-aos="fade-left"
           className="lg:w-1/2 h-[50vh] lg:scale-100 md:scale-150 aspect-square"
         >
-          <img className="object-cover" src="/images/img1.png" alt="Bg" />
+          <Image
+            className="object-cover w-full h-full"
+            src="/images/img1.png"
+            width={500}
+            height={500}
+            alt="Bg"
+          />
         </div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-auto w-full gap-4 relative top-[-6em] lg:top-[10em] left-0">

@@ -9,7 +9,6 @@ import {
   FaGithub,
   FaHelicopter,
   FaPhotoVideo,
-  FaStar,
 } from "react-icons/fa";
 
 const dataSevices = [
