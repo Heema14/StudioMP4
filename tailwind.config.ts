@@ -6,6 +6,11 @@ export default {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  theme: {},
+  theme: {
+    fontFamily: {
+      poppins: "var(--font-Poppins)",
+      messiri: "var(--font-Messiri)",
+    },
+  },
   plugins: [],
 } satisfies Config;

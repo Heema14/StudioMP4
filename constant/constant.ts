@@ -6,101 +6,39 @@ export const navLink = [
   },
   {
     id: 2,
-    url: "#Features",
-    label: "Features",
+    url: "#bestService",
+    label: "Best Service",
   },
   {
     id: 3,
-    url: "#Services",
-    label: "Services",
+    url: "#ourClients",
+    label: "Our Clients",
   },
   {
     id: 4,
-    url: "#ClientReview",
-    label: "Reviews",
+    url: "#ulLiveBlocks",
+    label: "Live Demo Blocks",
+    childBlocks: [
+      {
+        id: 1,
+        url: "#selectedProjects",
+        label: "Selected Projects",
+      },
+      {
+        id: 2,
+        url: "#trustingClients",
+        label: "Trusting Clients",
+      },
+      {
+        id: 3,
+        url: "#professional",
+        label: "Professional",
+      },
+    ],
   },
   {
     id: 5,
-    url: "#Team",
-    label: "Team",
-  },
-  {
-    id: 6,
-    url: "#Pricing",
-    label: "Pricing",
-  },
-  {
-    id: 7,
-    url: "#footer",
-    label: "Contact",
-  },
-];
-
-export const SolutionFoot = [
-  {
-    id: 1,
-    url: "#footer",
-    label: "Enter Price",
-  },
-  {
-    id: 2,
-    url: "#footer",
-    label: "By work flow",
-  },
-  {
-    id: 3,
-    url: "#footer",
-    label: "By Team",
-  },
-];
-
-export const CompanyFoot = [
-  {
-    id: 1,
-    url: "#footer",
-    label: "About",
-  },
-  {
-    id: 2,
-    url: "#footer",
-    label: "News & Press",
-  },
-  {
-    id: 3,
-    url: "#footer",
-    label: "Our Customer",
-  },
-  {
-    id: 4,
-    url: "#footer",
-    label: "Leadership",
-  },
-  {
-    id: 5,
-    url: "#footer",
-    label: "Careers",
-  },
-];
-
-export const ResourcesFoot = [
-  {
-    id: 1,
-    url: "#footer",
-    label: "Blog",
-  },
-  {
-    id: 2,
-    url: "#footer",
-    label: "Webinar & Events",
-  },
-  {
-    id: 3,
-    url: "#footer",
-    label: "Podcast",
-  },
-  {
-    id: 4,
-    url: "#footer",
-    label: "E-book & Guides",
+    url: "#contact",
+    label: "Contact Us",
   },
 ];

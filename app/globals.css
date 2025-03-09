@@ -6,55 +6,112 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  transition: all linear;
+  transition-duration: 200ms;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
-.listNav::after {
-  content: "";
+::-webkit-scrollbar {
+  width: 8px;
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(rgba(230, 86, 86, 0.445) 0%, #dc2626 50%);
+  border-radius: 2px;
+}
+
+::selection {
+  background-color: #dc2626;
+  color: white;
+}
+
+.lineAbove::after {
+  content: '';
   position: absolute;
-  bottom: 2px;
+  top: -15px;
   left: 0;
-  background: white;
-  width: 50%;
-  height: 1.5px;
+  background-color: #dc2626 !important;
+  width: 16%;
+  height: 4px;
+  border-radius: 5px;
+}
+
+.roundedVideo::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  border: 2px solid wheat;
+  top: -15%;
+  left: -15%;
+  width: 100px;
+  aspect-ratio: 1 / 1;
+  z-index: 50;
+  animation: circel 3s infinite both linear;
+}
+
+.lineUnder::after {
+  content: "";
+  background-color: rgb(220, 38, 38);
+  width: 2px;
+  height: 50%;
   border-radius: 10px;
-  transition: all linear;
-  transition-duration: 200ms;
+  position: absolute;
+  bottom: -5rem;
+  left: 50%;
+  z-index: 20;
 }
 
-.listNav:hover::after {
-  width: 100%;
-  background-color: #6b7280;
+.wordbefore::before {
+  content: 'Works';
+  position: absolute;
+  color: rgb(29, 28, 28);
+  font-size: 5.6rem;
+  left: 0;
+  right: 0;
+  top: -12px;
+  letter-spacing: 5px;
+  user-select: none;
+  z-index: -1;
 }
 
-.ImgCard:hover .ImgTeam {
-  height: 6rem;
-  background: rgb(0 0 0 / 0.6);
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .lineUnder::after {
+    height: 35%;
+  }
 }
 
-.ImgCard:hover Img {
-  transform: scale(1.1);
+@media screen and (max-width:640px) {
+  .lineUnder::after {
+    height: 35%;
+  }
 }
 
-.imgAnim {
-  animation: imgAnim 3s infinite linear;
+@media screen and (max-width:530px) {
+  .lineAbove::after {
+    top: -15px;
+    left: 0.4em;
+  }
+
+  .lineUnder::after {
+    height: 35%;
+  }
 }
 
-@keyframes imgAnim {
+@keyframes circel {
 
   0%,
   100% {
-    transform: translateY(10px);
+    transform: scale(1.2);
   }
 
   50% {
-    transform: translateY(0px);
+    transform: scale(1);
   }
 }
 
-.CardRev:hover .BxImg {
-  transform: scale(1.2);
-}
+@layer base {}
