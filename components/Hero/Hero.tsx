@@ -2,7 +2,6 @@ import React from "react";
 import CustomBtn from "../Helper/CustomBtn";
 import DivCard from "./DivCard";
 import { FaCopy, FaFile, FaStar } from "react-icons/fa";
-import TitleSecs from "../Helper/TitleSecs";
 import TypeWriterEffect from "./TypeWriterEffect";
 import Image from "next/image";
 

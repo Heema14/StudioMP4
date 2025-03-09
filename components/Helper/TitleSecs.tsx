@@ -4,7 +4,7 @@ const TitleSecs = ({
   titleSec,
   styleTitle,
 }: {
-  titleSec: String;
+  titleSec: string;
   styleTitle: string;
 }) => {
   return (

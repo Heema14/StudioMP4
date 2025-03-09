@@ -1,6 +1,5 @@
 "use client";
 
-import TitleSecs from "@/components/Helper/TitleSecs";
 import React from "react";
 
 const Map = () => {
