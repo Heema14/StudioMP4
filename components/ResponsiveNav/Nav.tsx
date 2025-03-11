@@ -22,7 +22,7 @@ const Nav = ({ openNav }: { openNav: () => void }) => {
 
   return (
     <header
-      className={`mb-2 w-full px-2 sm:px-0 fixed z-40 h-[12vh] ${
+      className={`mb-2 w-full px-2 sm:px-0 fixed z-40 h-[15vh] ${
         navbg ? "bg-white/90 shadow-md" : "fixed"
       }`}
     >
@@ -33,7 +33,7 @@ const Nav = ({ openNav }: { openNav: () => void }) => {
             className="text-5xl text-gray-900 font-messiri font-semibold select-none"
             onClick={() => setActiveLink("#Hero")}
           >
-            StudioMP4<sub className="text-red-600 text-5xl">•</sub>
+            StudioM4<sub className="text-red-600 text-5xl">•</sub>
           </Link>
         </div>
 
@@ -43,9 +43,9 @@ const Nav = ({ openNav }: { openNav: () => void }) => {
               <li key={link.id} className="relative group">
                 <Link
                   href={link.url}
-                  className={`relative text-base font-medium w-fit transition ${
+                  className={`relative text-base font-medium w-fit after:block after:content-[''] after:absolute after:h-0.5 after:bg-red-500 after:w-0 after:rounded-full after:transition-all duration-300 ${
                     activeLink === link.url ? "text-red-500" : "text-gray-900"
-                  } hover:text-red-500`}
+                  } hover:text-red-500 after:hover:w-[20px]`}
                   onClick={() => setActiveLink(link.url)}
                 >
                   {link.label}
@@ -59,18 +59,15 @@ const Nav = ({ openNav }: { openNav: () => void }) => {
 
                 {link.childBlocks && (
                   <div className="group-hover:block absolute top-7 hidden">
-                    <ul className="bg-gray-800 rounded-md w-[180px] h-[140px] px-3 flex flex-col justify-center items-start gap-2">
+                    <ul className="bg-white w-[180px] h-[140px] px-3 flex flex-col justify-center items-start gap-2">
                       {link.childBlocks.map((childBlock) => (
-                        <li
-                          key={childBlock.id}
-                          className="w-full border-b border-red-500 pb-1"
-                        >
+                        <li key={childBlock.id} className="w-full">
                           <Link
                             href={childBlock.url}
-                            className={`relative text-white hover:text-red-600 font-medium w-fit transition ${
+                            className={`relative text-gray-900 text-sm hover:text-red-600 font-medium w-fit transition ${
                               activeLink === childBlock.url
                                 ? "text-red-600"
-                                : "text-white"
+                                : "text-gray-900"
                             }`}
                             onClick={() => setActiveLink(childBlock.url)}
                           >

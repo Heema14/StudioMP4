@@ -25,7 +25,7 @@ const Hero = () => {
           className="lg:w-1/2 h-[50vh] lg:scale-100 md:scale-150 aspect-square"
         >
           <Image
-            className="object-cover w-full h-full"
+            className="object-cover"
             src="/images/img1.png"
             width={500}
             height={500}

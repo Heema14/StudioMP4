@@ -14,14 +14,10 @@ html {
   scroll-behavior: smooth;
 }
 
-::-webkit-scrollbar {
-  width: 8px;
-  background: transparent;
-}
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(rgba(230, 86, 86, 0.445) 0%, #dc2626 50%);
-  border-radius: 2px;
+  background: #dc2626;
+  border-radius: 8px;
 }
 
 ::selection {
@@ -37,6 +33,18 @@ html {
   background-color: #dc2626 !important;
   width: 16%;
   height: 4px;
+  border-radius: 5px;
+}
+
+.hoverLink:hover:after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  background-color: #dc2626 !important;
+  height: 2px;
+  transition: all linear 200ms;
   border-radius: 5px;
 }
 

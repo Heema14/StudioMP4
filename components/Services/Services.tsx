@@ -69,10 +69,10 @@ const Services = () => {
           {dataSevices.map((data, index) => {
             return (
               <div
-                data-aos-delay={index * 150}
-                data-aos="fade-top"
+                // data-aos-delay={index * 150}
+                // data-aos="fade-top"
                 key={index}
-                className="flex justify-center items-center flex-col text-center gap-4 px-6 py-8 rounded-md border hover:border-red-600 hover:shadow-md"
+                className="flex justify-center items-center flex-col text-center gap-4 px-6 py-8 border-b-2 border-white hover:border-red-600 hover:shadow-lg"
               >
                 <div className="w-10 h-10">{data.icon}</div>
 

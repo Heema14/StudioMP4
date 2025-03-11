@@ -13,6 +13,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import ToggleChooses from "./ToggleChooses/ToggleChooses";
 import Map from "./Map/Map";
+import ContactUs from "./ContactUs/ContactUs";
 
 const Home = () => {
   useEffect(() => {
@@ -35,6 +36,7 @@ const Home = () => {
       <TrustingClient />
       <Profissonales />
       <Map />
+      <ContactUs />
     </main>
   );
 };

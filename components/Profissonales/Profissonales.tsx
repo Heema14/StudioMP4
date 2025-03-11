@@ -74,7 +74,7 @@ const Profissonales = () => {
                   className="object-cover w-full h-full rounded-full duration-200"
                 />
 
-                <div className="absolute inset-0 w-full h-full bg-red-600/75 group-hover:flex justify-center items-center flex-col hidden duration-200 transition-all rounded-full">
+                <div className="absolute inset-0 w-full h-full bg-red-600/75 group-hover:opacity-100 flex justify-center items-center flex-col opacity-0 duration-200 transition-all rounded-full">
                   <h2 className="text-white font-semibold text-lg">
                     {data.name}
                   </h2>
