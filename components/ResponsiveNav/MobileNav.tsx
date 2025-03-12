@@ -2,7 +2,7 @@ import { navLink } from "@/constant/constant";
 import Link from "next/link";
 import React from "react";
 import { CgClose } from "react-icons/cg";
-import { FaArrowDown, FaCartArrowDown } from "react-icons/fa";
+import { FaArrowDown } from "react-icons/fa";
 
 const MobileNav = ({
   closeNav,
