@@ -40,7 +40,7 @@ const OurClients = () => {
           </div>
 
           <CustomBtn
-            CustomStyle="bg-red-600 text-white hover:bg-red-800 py-5"
+            CustomStyle="text-white hover:bg-red-800 py-3"
             text="Read Our Story"
           />
         </div>

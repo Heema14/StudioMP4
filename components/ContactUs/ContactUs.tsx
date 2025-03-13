@@ -87,7 +87,7 @@ const ContactUs = () => {
               role="textbox"
               rows={7}
               maxLength={1000}
-              className="px-3 py-4 outline-none text-white focus:border-b border-b border-red-400 bg-transparent w-full"
+              className="px-3 py-4 outline-none  text-white focus:border-b border-b border-red-400 bg-transparent w-full"
             />
 
             {/* <button
@@ -98,7 +98,7 @@ const ContactUs = () => {
           </button> */}
 
             <CustomBtn
-              CustomStyle="bg-red-600 text-white focus:outline-red-600 hover:bg-red-800 px-[90px] mt-16 py-5"
+              CustomStyle="bg-transparent text-white focus:outline-red-600 px-[90px] mt-16"
               text="Send"
             />
           </form>
